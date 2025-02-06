@@ -1,0 +1,51 @@
+.button {
+	padding: 10px 16px;
+	border-radius: 8px;
+	border-width: 1px;
+	border-style: solid;
+	font-size: 16px;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-sizing: border-box;
+	background-color: #fff;
+	color: #000;
+}
+
+.button.disabled {
+	cursor: not-allowed;
+	opacity: 0.3;
+}
+
+.button.loading {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.button.loading .loader {
+	/* 애니메이션 설정 */
+}
+
+.button:disabled {
+	cursor: not-allowed;
+}
+
+.loader {
+	width: 10px;
+	height: 10px;
+	border: 2px solid rgba(0, 0, 0, 0.5);
+	border-top: 2px solid white;
+	border-radius: 50%;
+	animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}

@@ -1,11 +1,15 @@
 import React, { useEffect, useState } from 'react';
+import './Button.module.css';
 
 interface ButtonProps {
 	label?: string;
 	color: string;
+	minWidth: number;
+	minHeight: number;
 	backgroundColor: string;
 	borderColor: string;
-	borderRadius: string | number;
+	borderRadius: number;
+	borderWidth: number;
 
 	isLoading?: boolean;
 	disabled?: boolean;
@@ -16,8 +20,13 @@ interface ButtonProps {
 
 const Button = ({
 	label = 'text',
-	color,
-	backgroundColor,
+	color = '#000',
+	minWidth = 0,
+	minHeight = 0,
+	backgroundColor = '#fff',
+	borderColor = '#000',
+	borderRadius = 8,
+	borderWidth = 1,
 	isLoading = false,
 	disabled = false,
 	onClick = () => {},
@@ -26,16 +35,11 @@ const Button = ({
 	return (
 		<button
 			style={{
-				padding: '10px 16px',
-				borderRadius: 8,
-				border: `1.5px solid #000`,
-				fontSize: '16px',
-				cursor: disabled || isLoading ? 'not-allowed' : 'pointer',
-				opacity: disabled ? 0.6 : 1,
-				display: 'flex',
-				alignItems: 'center',
-				justifyContent: 'center',
-				boxSizing: 'border-box',
+				minWidth,
+				minHeight,
+				borderRadius,
+				borderWidth,
+				borderColor,
 				backgroundColor,
 				color,
 				...style,
