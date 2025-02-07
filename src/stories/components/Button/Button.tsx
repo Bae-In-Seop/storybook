@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import './Button.module.css';
+import styles from './Button.module.css';
 
 interface ButtonProps {
 	label?: string;
@@ -48,7 +48,7 @@ const Button = ({
 			disabled={disabled}
 		>
 			{isLoading ?
-				<span className='loader'></span>
+				<span className={styles.loader}></span>
 			:	label}
 		</button>
 	);

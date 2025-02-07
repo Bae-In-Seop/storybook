@@ -1,0 +1,84 @@
+.toggleSwitch {
+	display: inline-flex;
+	align-items: center;
+	justify-content: space-between;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
+.toggleSwitch.off {
+	background-color: #ccc !important;
+}
+
+/* 기본 (medium) */
+.toggleSwitch.medium {
+	width: 60px;
+	height: 30px;
+	border-radius: 20px;
+}
+
+/* 작은 사이즈 (small) */
+.toggleSwitch.small {
+	width: 40px;
+	height: 20px;
+	border-radius: 15px;
+}
+
+/* 큰 사이즈 (large) */
+.toggleSwitch.large {
+	width: 80px;
+	height: 40px;
+	border-radius: 25px;
+}
+
+.toggleSwitchHandle {
+	position: relative;
+	background-color: #ccc;
+	border-radius: 50%;
+	transition: transform 0.3s ease;
+}
+
+/* 기본 (medium) */
+.toggleSwitchHandle.medium {
+	width: 26px;
+	height: 26px;
+}
+
+/* 작은 사이즈 (small) */
+.toggleSwitchHandle.small {
+	width: 16px;
+	height: 16px;
+}
+
+/* 큰 사이즈 (large) */
+.toggleSwitchHandle.large {
+	width: 36px;
+	height: 36px;
+}
+
+/* 핸들 이동 (medium) */
+.toggleSwitchHandle.medium.on {
+	transform: translateX(31px);
+}
+
+.toggleSwitchHandle.medium.off {
+	transform: translateX(3px);
+}
+
+/* 핸들 이동 (small) */
+.toggleSwitchHandle.small.on {
+	transform: translateX(21px);
+}
+
+.toggleSwitchHandle.small.off {
+	transform: translateX(3px);
+}
+
+/* 핸들 이동 (large) */
+.toggleSwitchHandle.large.on {
+	transform: translateX(41px);
+}
+
+.toggleSwitchHandle.large.off {
+	transform: translateX(3px);
+}

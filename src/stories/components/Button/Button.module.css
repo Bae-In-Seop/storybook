@@ -1,4 +1,4 @@
-.button {
+button {
 	padding: 10px 16px;
 	border-radius: 8px;
 	border-width: 1px;
@@ -13,22 +13,18 @@
 	color: #000;
 }
 
-.button.disabled {
+button.disabled {
 	cursor: not-allowed;
 	opacity: 0.3;
 }
 
-.button.loading {
+button.loading {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 
-.button.loading .loader {
-	/* 애니메이션 설정 */
-}
-
-.button:disabled {
+button:disabled {
 	cursor: not-allowed;
 }
 
