@@ -22,7 +22,7 @@ const ToggleSwitch = ({
 }: ToggleProps) => {
 	const [enable, setEnable] = useState(isEnable);
 
-	const handleToggle = (event: React.MouseEvent) => {
+	const handleToggle = () => {
 		if (!disabled) {
 			setEnable(prev => {
 				const value = !prev;

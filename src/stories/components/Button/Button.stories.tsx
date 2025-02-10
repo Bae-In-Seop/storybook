@@ -81,8 +81,6 @@ export const Basic: Story = {
 		layout: 'centered',
 	},
 	args: {
-		label: 'Button',
-		isLoading: false,
-		disabled: false,
+		label: 'Input',
 	},
 };
