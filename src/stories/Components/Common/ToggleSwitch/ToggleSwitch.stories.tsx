@@ -3,6 +3,7 @@ import type { Meta, StoryObj } from '@storybook/react';
 import ToggleSwitch from './ToggleSwitch';
 
 const meta: Meta<typeof ToggleSwitch> = {
+	title: 'Common/ToggleSwitch',
 	tags: ['autodocs'],
 	component: ToggleSwitch,
 	argTypes: {
